@@ -5,6 +5,7 @@ from flask import render_template, flash, request, redirect, url_for
 from flask_login import login_required
 from app.catalog.forms import EditBookForm, CreateBookForm
 
+
 @main.route('/')
 def display_books():
     books = Book.query.all()
